@@ -1,11 +1,22 @@
 .skip-to-content-link {
+    left: 0%;
+    top: 0%;
     position: absolute;
-    left: -9999px;
-    z-index: 999;
-    padding: 1em;
-    background-color: black;
-    color: white;
-    opacity: 0;
+    transform: translateY(-100%);
+}
+
+/*.skip-to-content-link{
+    background: #e77e23;
+    height: 30px;
+    left: 50%;
+    padding: 8px;
+    position: absolute;
+    transform: translateY(-100%);
+    transition: transform 0.3s;
+}*/
+  
+.skip-to-content-link:focus, .skip-to-content-link:active{
+    transform: translateY(0%);
 }
 
 .navlinks{
